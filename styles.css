@@ -2,12 +2,11 @@ body {
     margin: 0;
     padding: 0;
 
-    background-image: url(sobres.es.png);
+    /* background-image: url(sobres.es.png); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-input#newsletter-close-button:checked + #newsletter-parent > label.newsletter-bg,
 input#newsletter-close-button:checked + #newsletter-parent {
     display: none;
 }
