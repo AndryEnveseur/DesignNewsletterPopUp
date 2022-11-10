@@ -9,11 +9,14 @@
 <body>
     <div id="container">
         <main>
-            <input type="checkbox" name="newsletter-close-button" id="newsletter-close-button" style="display: none;">
-
+            <input 
+                type="checkbox" 
+                name="newsletter-close-button" 
+                checked="False" 
+                id="newsletter-close-button" 
+            >
             <div id="newsletter-parent">
                 <label for="newsletter-close-button" class="newsletter-bg">
-                    lol
                 </label>
                 <div id="newsletter-pop-up">
                     <div class="newsletter-header">
@@ -48,4 +51,15 @@
         </main>
     </div>
 </body>
+<script>
+    const SECONDS_SHOW_POPUP = 1;
+
+    const showPopUp = setTimeout(() => {
+        document.querySelector('#newsletter-close-button').checked = false;
+
+        console.log('xd')
+        clearTimeout(showPopUp)
+    }, SECONDS_SHOW_POPUP * 1000)
+
+</script>
 </html>
