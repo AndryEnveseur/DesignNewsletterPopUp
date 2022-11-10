@@ -11,8 +11,13 @@ input#newsletter-close-button:checked + #newsletter-parent {
     visibility: hidden;
 }
 
+input#newsletter-close-button:not(:checked) + #newsletter-parent .newsletter-bg {
+    transition: background-color 500ms ease;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
 input#newsletter-close-button:checked + #newsletter-parent #newsletter-pop-up{
-    transform: scale(.8);
+    transform: scale(.9);
 }
 
 
@@ -40,7 +45,7 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop
 }
 
 .newsletter-bg {
-    background-color: rgba(0, 0, 0, 0.695);
+    background-color: transparent;
 }
 
 #newsletter-parent {
