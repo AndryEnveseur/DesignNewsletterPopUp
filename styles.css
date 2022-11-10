@@ -66,13 +66,13 @@ input#newsletter-close-button:checked + #newsletter-parent {
     box-sizing: border-box;
 }
 
-.newsletter-header label[for="newsletter-close-button"] > svg {
+.newsletter-header label[for="newsletter-close-button"] {
     float: right;
 
     transition: opacity 400ms;
 }
 
-.newsletter-header label[for="newsletter-close-button"]:hover > svg {
+.newsletter-header label[for="newsletter-close-button"]:hover {
     cursor: pointer;
     opacity: .7;
 }
