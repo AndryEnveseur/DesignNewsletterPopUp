@@ -8,7 +8,8 @@ body {
 }
 
 input#newsletter-close-button:checked + #newsletter-parent {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
 }
 
 .newsletter-bg,
@@ -22,6 +23,8 @@ input#newsletter-close-button:checked + #newsletter-parent {
 
     --general-padding: 20px;
     --blue: #25B9FF;
+
+    z-index: 999;
 }
 
 .newsletter-bg {
@@ -50,6 +53,8 @@ input#newsletter-close-button:checked + #newsletter-parent {
     font-family: Roboto,sans-serif;
 
     position: relative;
+
+    z-index: 999;
 }
 
 .newsletter-header {
