@@ -12,8 +12,9 @@ input#newsletter-close-button:checked + #newsletter-parent {
 }
 
 input#newsletter-close-button:not(:checked) + #newsletter-parent .newsletter-bg {
-    transition: background-color 500ms ease;
-    background-color: rgba(0, 0, 0, 0.527);
+    transition: opacity 500ms;
+    background-color: black;
+    opacity: .5;
 }
 
 input#newsletter-close-button:checked + #newsletter-parent #newsletter-pop-up{
@@ -24,9 +25,7 @@ input#newsletter-close-button:checked + #newsletter-parent #newsletter-pop-up{
 input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop-up {
     transform: scale(1);
 
-    transition-property: transform;
-    transition-duration: 500ms;
-    transition-timing-function: ease;
+    transition: transform 500ms;
 }
 
 .newsletter-bg,
@@ -46,6 +45,7 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop
 
 .newsletter-bg {
     background-color: transparent;
+    opacity: 0;
 }
 
 #newsletter-parent {
