@@ -9,6 +9,14 @@ body {
 
 input#newsletter-close-button:checked + #newsletter-parent {
     visibility: hidden;
+    transition: opacity 500ms;
+    opacity: 0;
+}
+
+input#newsletter-close-button:not(:checked) + #newsletter-parent {
+    transition: opacity 500ms;
+    opacity: 1;
+
 }
 
 input#newsletter-close-button:not(:checked) + #newsletter-parent .newsletter-bg {
