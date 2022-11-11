@@ -98,7 +98,7 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop
     opacity: .7;
 }
 
-#newsletter-percentage-offer {
+.newsletter-offer {
     color: var(--blue);
     font-weight: bolder;
 }
@@ -117,7 +117,7 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop
 
 .newsletter-main h2 {
     text-transform: uppercase;
-    font-size: 1.9em;
+    font-size: 1.5em;
     word-spacing: 2px;
     margin: 0;
     text-align: center;
@@ -202,9 +202,12 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop
     text-decoration: underline;
 }
 
+.newsletter-maybe-later label {
+    cursor: pointer;
+}
+
 .newsletter-maybe-later:hover {
     text-decoration: none;
-    cursor: pointer;
 }
 
 @media (max-width: 700px) {
