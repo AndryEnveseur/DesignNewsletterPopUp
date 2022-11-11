@@ -194,16 +194,17 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop
     outline: none;
 
     margin: 30px 0 20px 0;
-    letter-spacing: 1.4px;
     color: black;
-    font-weight: 600;
-    font-size: .7em;
 
     text-decoration: underline;
 }
 
 .newsletter-maybe-later label {
     cursor: pointer;
+    font-weight: 600;
+    font-size: .7em;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
 }
 
 .newsletter-maybe-later:hover {
