@@ -14,7 +14,7 @@
                 name="newsletter-close-button" 
                 checked="False" 
                 id="newsletter-close-button" 
-                style="display: none;"
+                
             >
             <div id="newsletter-parent">
                 <label for="newsletter-close-button" class="newsletter-bg">
@@ -53,7 +53,7 @@
     const SECONDS_SHOW_POPUP = 1;
 
     const showPopUp = setTimeout(() => {
-        document.querySelector('#newsletter-close-button').checked = false;
+        document.querySelector('#newsletter-close-button').checked = false
         clearTimeout(showPopUp)
     }, SECONDS_SHOW_POPUP * 1000)
 

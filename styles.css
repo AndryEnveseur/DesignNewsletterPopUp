@@ -14,9 +14,9 @@ input#newsletter-close-button:checked + #newsletter-parent {
 }
 
 input#newsletter-close-button:not(:checked) + #newsletter-parent {
-    transition: opacity 500ms;
-    opacity: 1;
 
+    /* display: none; */
+    opacity: 1;
 }
 
 input#newsletter-close-button:not(:checked) + #newsletter-parent .newsletter-bg {
@@ -25,10 +25,9 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent .newsletter-bg 
     opacity: .5;
 }
 
-input#newsletter-close-button:checked + #newsletter-parent #newsletter-pop-up{
+input#newsletter-close-button:checked + #newsletter-parent #newsletter-pop-up {
     transform: scale(.9);
 }
-
 
 input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop-up {
     transform: scale(1);
