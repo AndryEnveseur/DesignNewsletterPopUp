@@ -10,13 +10,8 @@ body {
 input#newsletter-close-button:checked + #newsletter-parent {
     visibility: hidden;
     transition: opacity 500ms;
+
     opacity: 0;
-}
-
-input#newsletter-close-button:not(:checked) + #newsletter-parent {
-
-    /* display: none; */
-    opacity: 1;
 }
 
 input#newsletter-close-button:not(:checked) + #newsletter-parent .newsletter-bg {
@@ -33,6 +28,10 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop
     transform: scale(1);
 
     transition: transform 500ms;
+}
+
+input#newsletter-close-button:checked + #newsletter-parent #newsletter-email {
+    height: 0;
 }
 
 .newsletter-bg,
@@ -59,6 +58,8 @@ input#newsletter-close-button:not(:checked) + #newsletter-parent #newsletter-pop
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: display 1000ms;
 }
 
 #newsletter-pop-up {
