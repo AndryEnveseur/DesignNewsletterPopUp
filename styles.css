@@ -1,10 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
-    background-image: url(sobres.es.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 input#newsletter-close-button:checked + #newsletter-parent {
@@ -44,7 +40,7 @@ input#newsletter-close-button:checked + #newsletter-parent #newsletter-email {
     height: 100%;
 
     --general-padding: 20px;
-    --blue: #25B9FF;
+    --blue: #2B8CDB;
 
     z-index: 999;
 }
@@ -83,7 +79,7 @@ input#newsletter-close-button:checked + #newsletter-parent #newsletter-email {
 }
 
 .newsletter-header {
-    background-image: url(https://mediacdn.espssl.com/10024/Shared/MVMT/Popup/US/prebf_pop_up_desktop.jpg);
+    background-image: url(./popup.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
